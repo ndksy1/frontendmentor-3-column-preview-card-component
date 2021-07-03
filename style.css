@@ -16,7 +16,7 @@ body {
 
 .container {
   max-width: 920px;
-  margin: 25vh auto;
+  margin: auto;
 
   display: flex;
   justify-content: center;
@@ -76,6 +76,7 @@ p.content {
 
 .card-sedan {
   background-color: hsl(31, 77%, 52%);
+
   border-radius: 1rem 0 0 1rem;
 }
 .card-suv {
@@ -85,4 +86,45 @@ p.content {
   background-color: hsl(179, 100%, 13%);
 
   border-radius: 0 1rem 1rem 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 330px;
+
+    flex-direction: column;
+  }
+
+  h2.heading {
+    font-size: 3rem;
+
+    padding-top: 2rem;
+  }
+
+  p.content {
+    font-size: 1.2rem;
+
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+
+    max-width: 11rem;
+
+    padding: 1rem 1.5rem;
+  }
+
+  .card-sedan {
+    background-color: hsl(31, 77%, 52%);
+
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card-luxury {
+    background-color: hsl(179, 100%, 13%);
+
+    border-radius: 0 0 1rem 1rem;
+  }
 }
